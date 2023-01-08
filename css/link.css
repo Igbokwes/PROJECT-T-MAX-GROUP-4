@@ -1,0 +1,153 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    /* text-decoration: none; */
+}
+
+.container {
+    width: 100%;
+    /* margin-right: 10rem; */
+}
+
+.container-2 {
+    margin: 20px 35px;
+
+}
+
+.container-3 {
+    margin: 20px 35px;
+}
+
+.container-4 {
+    margin: 20px 35px;
+}
+
+header .rise {
+    margin-left: 2rem;
+    margin-top: 1rem;
+    text-transform: uppercase;
+    font-size: 40px;
+    color: blue;
+}
+
+header .news {
+    margin-left: 10rem;
+    text-transform: lowercase;
+    font-size: 20px;
+    font-style: italic;
+}
+
+h1 {
+    font-style: italic;
+}
+
+.news-section {
+    width: 85%;
+    margin: 20px auto;
+}
+
+.news-section .title {
+    width: 60%;
+    text-align: center;
+    margin: auto;
+}
+
+.news-section .title h2 {
+    font-size: 40px;
+    color: teal;
+    text-transform: uppercase;
+    margin-top: 50px;
+}
+
+.news-section .title p {
+    font-size: 18px;
+    color: teal;
+    margin-top: 20px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    margin: 25px auto;
+}
+
+.cards .card {
+    width: 100%;
+    position: relative;
+}
+
+/* .image-section img {
+    width: 90px;
+    height: auto;
+} */
+
+.content {
+    padding: 15px 20px;
+}
+
+.content h4 {
+    font-size: 24px;
+    color: #222;
+    font-weight: 500;
+}
+
+.content p {
+    color: black;
+    font-size: 15px;
+}
+
+.content a {
+    text-decoration: none;
+    color: #fff;
+    margin-top: 12px;
+    display: inline-block;
+    background-color: aqua;
+    padding: 8px 15px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.card .posted-date {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    background-color: chartreuse;
+    padding: 6px 15px;
+}
+
+footer {
+    background-color: teal;
+    margin-top: 100px;
+    /* margin-left: 5rem; */
+}
+
+footer p {
+    color: white;
+    text-align: center;
+    padding: 5px 10px;
+}
+
+@media (max-width: 992px) {
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media (max-width: 768px) {
+    .cards {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    footer {
+        grid-template-columns: 1fr;
+    }
+}
